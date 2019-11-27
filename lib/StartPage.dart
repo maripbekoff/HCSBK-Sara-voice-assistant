@@ -17,14 +17,14 @@ class StartPage extends StatelessWidget {
           Align(
             alignment: Alignment.centerRight,
             child: IconButton(
-              icon: Icon(Icons.help_outline),
-              color: Color(0xFF287B7B),
-              disabledColor: Color(0xFF287B7B),
+              icon: Image(
+                image: AssetImage('assets/img/notifications.png'),
+              ),
               padding: const EdgeInsets.fromLTRB(0, 20, 25, 0),
               tooltip: 'FAQ',
               splashColor: Colors.white,
               highlightColor: Colors.white,
-              iconSize: 30,
+              iconSize: 35,
               onPressed: () {
                 navigateToFAQPage(context);
               },
@@ -33,7 +33,7 @@ class StartPage extends StatelessWidget {
           Expanded(
             flex: 1,
             child: Padding(
-              padding: const EdgeInsets.all(50),
+              padding: const EdgeInsets.fromLTRB(20, 50, 20, 0),
               child: PageView(
                 physics: BouncingScrollPhysics(),
                 children: <Widget>[
@@ -79,14 +79,14 @@ class StartPage extends StatelessWidget {
                             ],
                           ),
                         ),
+                        SizedBox(height: 30),
                         Padding(
                           padding: const EdgeInsets.all(8),
                           child: Column(
                             children: <Widget>[
                               Text('Система Управления',
                                   style: TextStyle(
-                                      fontFamily: 'AlegreyaSans',
-                                      fontWeight: FontWeight.bold,
+                                      fontFamily: 'Montserrat-Bold',
                                       fontSize: 20)),
                               SizedBox(
                                 height: 20,
@@ -96,7 +96,7 @@ class StartPage extends StatelessWidget {
                                   textAlign: TextAlign.center,
                                   style: TextStyle(
                                       color: Color(0xFF076C6C),
-                                      fontFamily: 'AlegreyaSans',
+                                      fontFamily: 'Montserrat-Black',
                                       fontSize: 16)),
                             ],
                           ),
@@ -146,14 +146,14 @@ class StartPage extends StatelessWidget {
                             ],
                           ),
                         ),
+                        SizedBox(height: 30),
                         Padding(
                           padding: const EdgeInsets.all(8),
                           child: Column(
                             children: <Widget>[
                               Text('Никаких очередей',
                                   style: TextStyle(
-                                      fontFamily: 'AlegreyaSans',
-                                      fontWeight: FontWeight.bold,
+                                      fontFamily: 'Montserrat-Black',
                                       fontSize: 20)),
                               SizedBox(
                                 height: 20,
@@ -163,7 +163,7 @@ class StartPage extends StatelessWidget {
                                   textAlign: TextAlign.center,
                                   style: TextStyle(
                                       color: Color(0xFF076C6C),
-                                      fontFamily: 'AlegreyaSans',
+                                      fontFamily: 'Montserrat-Medium',
                                       fontSize: 16)),
                             ],
                           ),
@@ -213,14 +213,14 @@ class StartPage extends StatelessWidget {
                             ],
                           ),
                         ),
+                        SizedBox(height: 30),
                         Padding(
                           padding: const EdgeInsets.all(8),
                           child: Column(
                             children: <Widget>[
                               Text('Превосходный дизайн',
                                   style: TextStyle(
-                                      fontFamily: 'AlegreyaSans',
-                                      fontWeight: FontWeight.bold,
+                                      fontFamily: 'Montserrat-Black',
                                       fontSize: 20)),
                               SizedBox(
                                 height: 20,
@@ -230,7 +230,7 @@ class StartPage extends StatelessWidget {
                                   textAlign: TextAlign.center,
                                   style: TextStyle(
                                       color: Color(0xFF076C6C),
-                                      fontFamily: 'AlegreyaSans',
+                                      fontFamily: 'Montserrat-Medium',
                                       fontSize: 16)),
                             ],
                           ),
@@ -242,24 +242,25 @@ class StartPage extends StatelessWidget {
               ),
             ),
           ),
-          Center(
-            child: Padding(
-              padding: const EdgeInsets.all(40.0),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.stretch,
-                children: [
-                  FlatButton(
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(15),
-                    ),
-                    child: Text('Авторизация', style: TextStyle(fontSize: 18)),
-                    color: Color(0xFFFF4D76),
-                    textColor: Colors.white,
-                    padding: const EdgeInsets.all(20),
-                    onPressed: () {},
+          Padding(
+            padding: const EdgeInsets.fromLTRB(40, 0, 40, 70),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: [
+                SizedBox(
+                  height: 50,
+                ),
+                FlatButton(
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(15),
                   ),
-                ],
-              ),
+                  child: Text('Авторизация', style: TextStyle(fontSize: 18)),
+                  color: Color(0xFFFF4D76),
+                  textColor: Colors.white,
+                  padding: const EdgeInsets.all(20),
+                  onPressed: () {},
+                ),
+              ],
             ),
           ),
         ],

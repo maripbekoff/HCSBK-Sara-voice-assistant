@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 import 'package:flutter/widgets.dart';
+import 'package:bank/code_icon_icons.dart';
 
 class FAQ extends StatelessWidget {
   @override
@@ -13,6 +15,7 @@ class FAQ extends StatelessWidget {
       body: Padding(
         padding: const EdgeInsets.all(20.0),
         child: ListView(
+          physics: BouncingScrollPhysics(),
           children: <Widget>[
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -29,7 +32,7 @@ class FAQ extends StatelessWidget {
                         'Контакты',
                         style: TextStyle(
                           fontFamily: 'AlegreyaSans',
-                          fontSize: 23,
+                          fontSize: 18,
                           fontWeight: FontWeight.w500,
                         ),
                       ),
@@ -48,7 +51,7 @@ class FAQ extends StatelessWidget {
                         'Адреса',
                         style: TextStyle(
                           fontFamily: 'AlegreyaSans',
-                          fontSize: 23,
+                          fontSize: 18,
                           fontWeight: FontWeight.w500,
                         ),
                       ),
@@ -64,12 +67,12 @@ class FAQ extends StatelessWidget {
                         height: 64,
                       ),
                       Text(
-                        'связь',
+                        'Связь',
                         textAlign: TextAlign.center,
                         softWrap: true,
                         style: TextStyle(
                           fontFamily: 'AlegreyaSans',
-                          fontSize: 23,
+                          fontSize: 18,
                           fontWeight: FontWeight.w500,
                         ),
                       ),
@@ -78,9 +81,96 @@ class FAQ extends StatelessWidget {
                 ),
               ],
             ),
+            SizedBox(height: 30),
             Column(
-              crossAxisAlignment: CrossAxisAlignment.stretch,
-              children: <Widget>[],
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: <Widget>[
+                FlatButton.icon(
+                  icon: Icon(CodeIcon.crown_1),
+                  label: Text('Топ 10 вопросов'),
+                  onPressed: () {},
+                ),
+                FlatButton.icon(
+                  icon: Icon(CodeIcon.money_1),
+                  label: Text('Депозиты'),
+                  onPressed: () {},
+                ),
+                FlatButton.icon(
+                  icon: Icon(CodeIcon.credit_card_1),
+                  label: Text('Онлайн уступка'),
+                  onPressed: () {},
+                ),
+                FlatButton.icon(
+                  icon: Icon(CodeIcon.certificate_1),
+                  label: Text('Премия государства'),
+                  onPressed: () {},
+                ),
+                FlatButton.icon(
+                  icon: Icon(CodeIcon.coins__1__1),
+                  label: Text('Кредиты'),
+                  onPressed: () {},
+                ),
+                FlatButton.icon(
+                  icon: Icon(CodeIcon.house_1),
+                  label: Text('Улучшение жилищных условий'),
+                  onPressed: () {},
+                ),
+                FlatButton.icon(
+                  icon: Icon(CodeIcon.creativity_1),
+                  label: Text('Партнеры Банка'),
+                  onPressed: () {},
+                ),
+                FlatButton.icon(
+                  icon: Icon(CodeIcon.invoice_1),
+                  label: Text('Пополнение счета'),
+                  onPressed: () {},
+                ),
+                FlatButton.icon(
+                  icon: Icon(CodeIcon.ticket_1),
+                  label: Text('Компенсация'),
+                  onPressed: () {},
+                ),
+                FlatButton.icon(
+                  icon: Icon(CodeIcon.slideshow_1),
+                  label: Text('Интернет-банкинг'),
+                  onPressed: () {},
+                ),
+                FlatButton.icon(
+                  icon: Icon(CodeIcon.suitcase_1),
+                  label: Text('Терминалы банка'),
+                  onPressed: () {},
+                ),
+                FlatButton.icon(
+                  icon: Icon(Icons.label_outline),
+                  label: Text('Онлайн-бронирование'),
+                  onPressed: () {},
+                ),
+                FlatButton.icon(
+                  icon: Icon(CodeIcon.dashboard_1),
+                  label: Text('Арест счетов'),
+                  onPressed: () {},
+                ),
+                FlatButton.icon(
+                  icon: Icon(CodeIcon.clipboard_1),
+                  label: Text('Коммисии, штрафы, пени'),
+                  onPressed: () {},
+                ),
+                FlatButton.icon(
+                  icon: Icon(CodeIcon.placeholder_1),
+                  label: Text('Консультация Банка'),
+                  onPressed: () {},
+                ),
+                FlatButton.icon(
+                  icon: Icon(CodeIcon.discount_1),
+                  label: Text('Акции'),
+                  onPressed: () {},
+                ),
+                FlatButton.icon(
+                  icon: Icon(CodeIcon.money_1),
+                  label: Text('Специальный счет'),
+                  onPressed: () {},
+                ),
+              ],
             ),
           ],
         ),
