@@ -45,6 +45,27 @@ flutter:
     - assets/img/starting_page2.png
     - assets/img/starting_page3.png
 
+    - assets/img/icons/FAQ/certificate.png
+    - assets/img/icons/FAQ/clipboard.png
+    - assets/img/icons/FAQ/coins.png
+    - assets/img/icons/FAQ/contact.png
+    - assets/img/icons/FAQ/contact2.png
+    - assets/img/icons/FAQ/creativity.png
+    - assets/img/icons/FAQ/credit-card.png
+    - assets/img/icons/FAQ/crown.png
+    - assets/img/icons/FAQ/dashboard.png
+    - assets/img/icons/FAQ/discount.png
+    - assets/img/icons/FAQ/house.png
+    - assets/img/icons/FAQ/house2.png
+    - assets/img/icons/FAQ/invoice.png
+    - assets/img/icons/FAQ/money.png
+    - assets/img/icons/FAQ/money2.png
+    - assets/img/icons/FAQ/placeholder.png
+    - assets/img/icons/FAQ/slideshow.png
+    - assets/img/icons/FAQ/suitcase.png
+    - assets/img/icons/FAQ/tag.png
+    - assets/img/icons/FAQ/ticket.png
+
   fonts:
     - family: Montserrat
       fonts:
