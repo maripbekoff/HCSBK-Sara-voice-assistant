@@ -2,9 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:bottom_navy_bar/bottom_navy_bar.dart';
 
-import 'package:bank/StartPage.dart';
 import 'package:bank/App/Pages/MainPage.dart';
 import 'package:bank/App/Pages/NewsPage.dart';
+import 'package:bank/App/Pages/ContactsPage.dart';
+import 'package:bank/App/Pages/SettingsPage.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -18,7 +19,8 @@ class HomePageState extends State<HomePage> {
   final _pageOptions = [
     MainPage(),
     NewsPage(),
-    StartPage(),
+    ContactsPage(),
+    SettingsPage(),
   ];
 
   @override
@@ -49,7 +51,7 @@ class HomePageState extends State<HomePage> {
               title: Text('Home'),
             ),
             BottomNavyBarItem(
-              icon: Icon(Icons.new_releases),
+              icon: Icon(Icons.library_books),
               activeColor: Color(0xFF076C6C),
               inactiveColor: Color(0xFFB0B0B0),
               title: Text('News'),
@@ -58,7 +60,7 @@ class HomePageState extends State<HomePage> {
               icon: Icon(Icons.phone),
               activeColor: Color(0xFF076C6C),
               inactiveColor: Color(0xFFB0B0B0),
-              title: Text('Call'),
+              title: Text('Contact'),
             ),
             BottomNavyBarItem(
               icon: Icon(Icons.settings),

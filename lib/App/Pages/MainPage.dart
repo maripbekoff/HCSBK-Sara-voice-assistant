@@ -41,7 +41,8 @@ class MainPage extends StatelessWidget {
                     children: <Widget>[
                       IconButton(
                         icon: Image(
-                          image: AssetImage('assets/img/notification1.png'),
+                          image:
+                              AssetImage('assets/img/icons/notification1.png'),
                         ),
                         padding: const EdgeInsets.fromLTRB(0, 20, 25, 10),
                         tooltip: 'Notifications',
@@ -60,18 +61,10 @@ class MainPage extends StatelessWidget {
               SizedBox(
                 height: 10,
               ),
-              Container(
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(15),
-                  color: Color(0xFF076C6C),
-                  boxShadow: [
-                    BoxShadow(
-                      blurRadius: 40,
-                      spreadRadius: 0,
-                      color: Colors.black.withOpacity(0.2),
-                    ),
-                  ],
-                ),
+              Card(
+                color: Color(0xFF076C6C),
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(15)),
                 child: Padding(
                   padding: const EdgeInsets.fromLTRB(20, 20, 20, 0),
                   child: Row(
@@ -105,7 +98,8 @@ class MainPage extends StatelessWidget {
                       Column(
                         children: <Widget>[
                           Image(
-                            image: AssetImage('assets/img/illustration.png'),
+                            image: AssetImage(
+                                'assets/img/main_page/illustration.png'),
                             height: MediaQuery.of(context).size.width / 4,
                           ),
                         ],
@@ -133,7 +127,8 @@ class MainPage extends StatelessWidget {
                         borderRadius: BorderRadius.circular(20),
                         boxShadow: [
                           BoxShadow(
-                            blurRadius: 40,
+                            blurRadius: 0.5,
+                            offset: Offset(0, 1),
                             spreadRadius: 0,
                             color: Colors.black.withOpacity(0.2),
                           ),
@@ -150,7 +145,7 @@ class MainPage extends StatelessWidget {
                             ),
                             child: Image(
                               image: AssetImage(
-                                  'assets/img/icons/FAQ/credit-card.png'),
+                                  'assets/img/icons/credit-card.png'),
                               height: 25,
                               color: Colors.white,
                             ),
@@ -181,7 +176,8 @@ class MainPage extends StatelessWidget {
                         borderRadius: BorderRadius.circular(20),
                         boxShadow: [
                           BoxShadow(
-                            blurRadius: 40,
+                            blurRadius: 0.5,
+                            offset: Offset(0, 1),
                             spreadRadius: 0,
                             color: Colors.black.withOpacity(0.2),
                           ),
@@ -198,7 +194,7 @@ class MainPage extends StatelessWidget {
                             ),
                             child: Image(
                               image: AssetImage(
-                                  'assets/img/icons/FAQ/placeholder.png'),
+                                  'assets/img/icons/placeholder.png'),
                               height: 25,
                               color: Colors.white,
                             ),
@@ -229,7 +225,8 @@ class MainPage extends StatelessWidget {
                         borderRadius: BorderRadius.circular(20),
                         boxShadow: [
                           BoxShadow(
-                            blurRadius: 40,
+                            blurRadius: 0.5,
+                            offset: Offset(0, 1),
                             spreadRadius: 0,
                             color: Colors.black.withOpacity(0.2),
                           ),
@@ -245,8 +242,8 @@ class MainPage extends StatelessWidget {
                               borderRadius: BorderRadius.circular(20),
                             ),
                             child: Image(
-                              image: AssetImage(
-                                  'assets/img/icons/FAQ/slideshow.png'),
+                              image:
+                                  AssetImage('assets/img/icons/slideshow.png'),
                               height: 25,
                               color: Colors.white,
                             ),
@@ -281,7 +278,8 @@ class MainPage extends StatelessWidget {
                     borderRadius: BorderRadius.circular(15),
                     boxShadow: [
                       BoxShadow(
-                        blurRadius: 40,
+                        blurRadius: 0.5,
+                        offset: Offset(0, 1),
                         spreadRadius: 0,
                         color: Colors.black.withOpacity(0.2),
                       ),

@@ -25,7 +25,7 @@ class FAQ extends StatelessWidget {
                   child: Column(
                     children: <Widget>[
                       Image(
-                        image: AssetImage('assets/img/icons/FAQ/contact2.png'),
+                        image: AssetImage('assets/img/icons/contact2.png'),
                         height: 64,
                       ),
                       Text(
@@ -44,7 +44,7 @@ class FAQ extends StatelessWidget {
                   child: Column(
                     children: <Widget>[
                       Image(
-                        image: AssetImage('assets/img/icons/FAQ/house.png'),
+                        image: AssetImage('assets/img/icons/house.png'),
                         height: 64,
                       ),
                       Text(
@@ -63,7 +63,7 @@ class FAQ extends StatelessWidget {
                   child: Column(
                     children: <Widget>[
                       Image(
-                        image: AssetImage('assets/img/icons/FAQ/contact.png'),
+                        image: AssetImage('assets/img/icons/contact.png'),
                         height: 64,
                       ),
                       Text(

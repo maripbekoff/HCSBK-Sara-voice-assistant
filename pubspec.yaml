@@ -24,6 +24,7 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^0.1.2
   bottom_navy_bar: ^5.2.2
+  url_launcher: ^5.2.7
 
 dev_dependencies:
   flutter_test:
@@ -42,25 +43,36 @@ flutter:
   uses-material-design: true
 
   assets:
-    - assets/img/starting_page.png
-    - assets/img/starting_page2.png
-    - assets/img/starting_page3.png
-    - assets/img/notifications.png
-    - assets/img/notification1.png
-    - assets/img/illustration.png
-    - assets/img/icons/FAQ/credit-card.png
-    - assets/img/icons/FAQ/placeholder.png
-    - assets/img/icons/FAQ/slideshow.png
-    - assets/img/icons/FAQ/contact.png
-    - assets/img/icons/FAQ/contact2.png
-    - assets/img/icons/FAQ/house.png
+    - assets/img/flash_page/header.png
+    - assets/img/flash_page/starting_page.png
+    - assets/img/flash_page/starting_page2.png
+    - assets/img/flash_page/starting_page3.png
+    - assets/img/icons/house.png
+    - assets/img/icons/avatar.png
+    - assets/img/icons/contact.png
+    - assets/img/icons/contact2.png
+    - assets/img/icons/slideshow.png
+    - assets/img/icons/credit-card.png
+    - assets/img/icons/placeholder.png
+    - assets/img/icons/notifications.png
+    - assets/img/icons/notification1.png
+    - assets/img/icons/vk.png
+    - assets/img/icons/youtube.png
+    - assets/img/icons/facebook.png
+    - assets/img/icons/instagram.png
+    - assets/img/main_page/illustration.png
+    - assets/img/main_page/zssbk.png
+    - assets/img/main_page/Baiterek.png
+    - assets/img/main_page/always_on_link.png
+    - assets/img/main_page/points_of_services.png
 
   fonts:
     - family: Montserrat
       fonts:
-        - asset: assets/fonts/Montserrat-Light.ttf
+        - asset: assets/fonts/Montserrat-Regular.ttf
         - asset: assets/fonts/Montserrat-Black.ttf
         - asset: assets/fonts/Montserrat-Medium.ttf
+        - asset: assets/fonts/Montserrat-Bold.ttf
     
     - family: CodeIcon
       fonts:

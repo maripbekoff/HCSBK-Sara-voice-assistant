@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
-import 'Help/FAQ.dart';
+import 'FAQ.dart';
+import 'AuthPage.dart';
 
 class StartPage extends StatelessWidget {
   Future navigateToFAQPage(context) async {
@@ -18,7 +19,7 @@ class StartPage extends StatelessWidget {
             alignment: Alignment.centerRight,
             child: IconButton(
               icon: Image(
-                image: AssetImage('assets/img/notifications.png'),
+                image: AssetImage('assets/img/icons/notifications.png'),
               ),
               padding: const EdgeInsets.fromLTRB(0, 20, 25, 0),
               tooltip: 'FAQ',
@@ -42,7 +43,8 @@ class StartPage extends StatelessWidget {
                     body: Column(
                       children: <Widget>[
                         Image(
-                          image: AssetImage('assets/img/starting_page.png'),
+                          image: AssetImage(
+                              'assets/img/flash_page/starting_page.png'),
                           height: 200,
                         ),
                         Container(
@@ -109,7 +111,8 @@ class StartPage extends StatelessWidget {
                     body: Column(
                       children: <Widget>[
                         Image(
-                          image: AssetImage('assets/img/starting_page2.png'),
+                          image: AssetImage(
+                              'assets/img/flash_page/starting_page2.png'),
                           height: 200,
                         ),
                         Container(
@@ -176,7 +179,8 @@ class StartPage extends StatelessWidget {
                     body: Column(
                       children: <Widget>[
                         Image(
-                          image: AssetImage('assets/img/starting_page3.png'),
+                          image: AssetImage(
+                              'assets/img/flash_page/starting_page3.png'),
                           height: 200,
                         ),
                         Container(
@@ -258,7 +262,12 @@ class StartPage extends StatelessWidget {
                   color: Color(0xFFFF4D76),
                   textColor: Colors.white,
                   padding: const EdgeInsets.all(20),
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => AuthPage()),
+                    );
+                  },
                 ),
               ],
             ),

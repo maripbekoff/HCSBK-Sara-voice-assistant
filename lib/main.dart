@@ -2,8 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 import 'package:bank/App/HomePage.dart';
+import 'package:bank/Starting/StartPage.dart';
 
-void main() => runApp(HomePage());
+void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
   @override
@@ -11,7 +12,7 @@ class MyApp extends StatelessWidget {
     SystemChrome.setEnabledSystemUIOverlays([]);
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Center(),
+      home: StartPage(),
     );
   }
 }
