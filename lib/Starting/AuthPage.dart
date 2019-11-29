@@ -42,7 +42,6 @@ class AuthPage extends StatelessWidget {
                       TextFormField(
                         decoration: InputDecoration(
                           icon: Icon(Icons.person),
-                          
                           hintText: 'Имя',
                         ),
                         validator: (value) {
