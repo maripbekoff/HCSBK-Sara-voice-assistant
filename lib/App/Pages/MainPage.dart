@@ -94,7 +94,7 @@ class MainPage extends StatelessWidget {
                             ),
                           ),
                         ],
-                      ),
+                      ), //yan go top
                       Column(
                         children: <Widget>[
                           Image(
@@ -380,6 +380,10 @@ class MainPage extends StatelessWidget {
                               height: 60,
                               width: 60,
                               decoration: BoxDecoration(
+                                image: DecorationImage(
+                                  image:
+                                      AssetImage('assets/img/icons/shop.png'),
+                                ),
                                 color: Color(0xFFF0F0F0),
                                 borderRadius: BorderRadius.circular(20),
                               ),
@@ -415,7 +419,117 @@ class MainPage extends StatelessWidget {
                         ),
                       ),
                       Text(
-                        '+\$300',
+                        '+\$10',
+                        style: TextStyle(
+                          fontFamily: 'Montserrat-Black',
+                          fontWeight: FontWeight.bold,
+                          fontSize: 20,
+                        ),
+                      ),
+                    ],
+                  ),
+                  SizedBox(height: 20),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: <Widget>[
+                      Container(
+                        child: Row(
+                          children: <Widget>[
+                            Container(
+                              height: 60,
+                              width: 60,
+                              decoration: BoxDecoration(
+                                color: Color(0xFFF0F0F0),
+                                borderRadius: BorderRadius.circular(20),
+                              ),
+                            ),
+                            SizedBox(
+                              width: 20,
+                            ),
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  'Выплачено',
+                                  style: TextStyle(
+                                    fontFamily: 'Montserrat-Black',
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.black.withOpacity(0.5),
+                                  ),
+                                ),
+                                SizedBox(
+                                  height: 15,
+                                ),
+                                Text(
+                                  '1 транзакция',
+                                  style: TextStyle(
+                                    fontFamily: 'Montserrat-Black',
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.black.withOpacity(0.5),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
+                      ),
+                      Text(
+                        '+\$2,830',
+                        style: TextStyle(
+                          fontFamily: 'Montserrat-Black',
+                          fontWeight: FontWeight.bold,
+                          fontSize: 20,
+                        ),
+                      ),
+                    ],
+                  ),
+                  SizedBox(height: 20),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: <Widget>[
+                      Container(
+                        child: Row(
+                          children: <Widget>[
+                            Container(
+                              height: 60,
+                              width: 60,
+                              decoration: BoxDecoration(
+                                color: Color(0xFFF0F0F0),
+                                borderRadius: BorderRadius.circular(20),
+                              ),
+                            ),
+                            SizedBox(
+                              width: 20,
+                            ),
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  'Выплачено',
+                                  style: TextStyle(
+                                    fontFamily: 'Montserrat-Black',
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.black.withOpacity(0.5),
+                                  ),
+                                ),
+                                SizedBox(
+                                  height: 15,
+                                ),
+                                Text(
+                                  '1 транзакция',
+                                  style: TextStyle(
+                                    fontFamily: 'Montserrat-Black',
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.black.withOpacity(0.5),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
+                      ),
+                      Text(
+                        '+\$12,730',
                         style: TextStyle(
                           fontFamily: 'Montserrat-Black',
                           fontWeight: FontWeight.bold,

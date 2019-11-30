@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:bank/Starting/RegistrationPage.dart';
 
 import 'FAQ.dart';
-import 'AuthPage.dart';
+import 'RegistrationPage.dart';
 
 class StartPage extends StatelessWidget {
   Future navigateToFAQPage(context) async {
@@ -162,12 +163,14 @@ class StartPage extends StatelessWidget {
                                 height: 20,
                               ),
                               Text(
-                                  'Приложение - отличное решение, с помощью которого вам не придеться стоять в очередях',
-                                  textAlign: TextAlign.center,
-                                  style: TextStyle(
-                                      color: Color(0xFF076C6C),
-                                      fontFamily: 'Montserrat-Medium',
-                                      fontSize: 16)),
+                                'Приложение - отличное решение, с помощью которого вам не придеться стоять в очередях',
+                                textAlign: TextAlign.center,
+                                style: TextStyle(
+                                  color: Color(0xFF076C6C),
+                                  fontFamily: 'Montserrat-Medium',
+                                  fontSize: 16,
+                                ),
+                              ),
                             ],
                           ),
                         ),
@@ -265,7 +268,7 @@ class StartPage extends StatelessWidget {
                   onPressed: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => AuthPage()),
+                      MaterialPageRoute(builder: (context) => Register()),
                     );
                   },
                 ),

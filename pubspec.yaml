@@ -25,7 +25,12 @@ dependencies:
   cupertino_icons: ^0.1.2
   bottom_navy_bar: ^5.2.2
   url_launcher: ^5.2.7
+  firebase_auth: ^0.15.0+1
+  provider: ^3.2.0
+  speech_recognition: ^0.3.0
 
+
+  
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -57,7 +62,11 @@ flutter:
     - assets/img/icons/notifications.png
     - assets/img/icons/notification1.png
     - assets/img/icons/vk.png
+    - assets/img/icons/key.png
+    - assets/img/icons/leaf.png
+    - assets/img/icons/shop.png
     - assets/img/icons/youtube.png
+    - assets/img/icons/language.png
     - assets/img/icons/facebook.png
     - assets/img/icons/instagram.png
     - assets/img/main_page/illustration.png
@@ -65,6 +74,7 @@ flutter:
     - assets/img/main_page/Baiterek.png
     - assets/img/main_page/always_on_link.png
     - assets/img/main_page/points_of_services.png
+    - assets/AppMap-0ba2f320699d.json
 
   fonts:
     - family: Montserrat

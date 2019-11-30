@@ -1,10 +1,13 @@
+import 'package:bank/services/auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:bank/wrapper.dart';
+import 'package:provider/provider.dart';
+import 'package:bank/models/user.dart';
+import 'package:speech_recognition/speech_recognition.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 
-import 'package:bank/App/HomePage.dart';
-import 'package:bank/Starting/StartPage.dart';
-
-void main() => runApp(HomePage());
+void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
   @override
@@ -14,9 +17,12 @@ class MyApp extends StatelessWidget {
       DeviceOrientation.portraitUp,
       DeviceOrientation.portraitDown,
     ]);
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: StartPage(),
+    return StreamProvider<User>.value(
+      value: AuthService().user,
+      child: MaterialApp(
+        debugShowCheckedModeBanner: false,
+        home: Wrapper(),
+      ),
     );
   }
 }

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/widgets.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'package:bank/App/Pages/MapPage.dart';
 
 class ContactsPage extends StatelessWidget {
   @override
@@ -33,7 +34,7 @@ class ContactsPage extends StatelessWidget {
                     image: DecorationImage(
                       image: AssetImage(
                           'assets/img/main_page/points_of_services.png'),
-                      fit: BoxFit.cover,
+                      fit: BoxFit.fill,
                     ),
                     borderRadius: BorderRadius.circular(15),
                     boxShadow: [
@@ -80,7 +81,12 @@ class ContactsPage extends StatelessWidget {
                             style: BorderStyle.solid,
                           ),
                           highlightedBorderColor: Color(0xFF076C6C),
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => MapPage()));
+                          },
                         ),
                       ],
                     ),

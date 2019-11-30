@@ -1,8 +1,10 @@
+import 'package:bank/code_icon_icons.dart';
 import 'package:flutter/material.dart';
 import 'package:bottom_navy_bar/bottom_navy_bar.dart';
 
 import 'package:bank/App/Pages/MainPage.dart';
 import 'package:bank/App/Pages/NewsPage.dart';
+import 'package:bank/App/Pages/SaraPage.dart';
 import 'package:bank/App/Pages/ContactsPage.dart';
 import 'package:bank/App/Pages/SettingsPage.dart';
 
@@ -18,6 +20,7 @@ class HomePageState extends State<HomePage> {
   final _pageOptions = [
     MainPage(),
     NewsPage(),
+    SaraPage(),
     ContactsPage(),
     SettingsPage(),
   ];
@@ -39,7 +42,7 @@ class HomePageState extends State<HomePage> {
           },
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           animationDuration: Duration(milliseconds: 300),
-          showElevation: false,
+          showElevation: true,
           iconSize: 30,
           items: [
             BottomNavyBarItem(
@@ -53,6 +56,12 @@ class HomePageState extends State<HomePage> {
               activeColor: Color(0xFF076C6C),
               inactiveColor: Color(0xFFB0B0B0),
               title: Text('News'),
+            ),
+            BottomNavyBarItem(
+              icon: Icon(CodeIcon.leaf_1),
+              activeColor: Color(0xFF076C6C),
+              inactiveColor: Color(0xFF076C6C),
+              title: Text('Sara'),
             ),
             BottomNavyBarItem(
               icon: Icon(Icons.phone),
